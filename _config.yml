@@ -13,6 +13,9 @@ collections:
     altBlog:
         output: true
 
+gems:
+- jemoji
+
 prose:
   siteurl: 'http://ejsimon33.github.io/my-github-repo-1'
   media: 'img'
