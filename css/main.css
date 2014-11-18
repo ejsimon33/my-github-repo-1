@@ -100,11 +100,16 @@ body {
 nav ul {
     margin: 0;
     padding: 0;
+} 
+
+nav li {
+    margin-top: 25px;
 }
 
 nav a {
     display: block;
     padding: 15px 0;
+    
 
     text-align: center;
     text-decoration: none;
