@@ -6,23 +6,39 @@ tag: hidden
 
 <article>
     <section>
-        <h2>PORTFOLIO</h2>
+        <h2>section h2 and this :thumbsup:</h2>
         
-       <section class="row portfolio">
-            <section class="rowWrapper clearfix">
-                <h1 class="textCenter">my work</h1>
+        {% for page in site.pages reversed %}
 
-                {% for item in site.data.portfolio %}
+        	{% if page.tag == "show" %}
 
-                    <article style="background: url('{{site.url}}/img/{{item.title}}.jpg') center; background-size: 100%; background-repeat: no-repeat"></article>
+            	<p><a href="{{site.url}}{{page.url}}">{{page.title}}</a></p>
 
-                {% endfor %}
+            {% else if page.tag == "hidden" %}
 
-                    <span class="right"><a href="#">all work >></a></span>
+            	{{page.title}}
+
+            {% endif %}
+
+            {% if page.tag == "big" %}
+
+ 				<h1><a href="{{site.url}}{{page.url}}">{{page.title}}</a></h1>
+
+	 		{% endif %}
+
+        {% endfor %}
+
+    </section>
 
 
-            </section>
-        </section>
+    <section>
+        <h2>POSTS</h2>
+        
+        {% for post in site.posts  %}
+
+            	<p><a href="{{site.url}}{{post.url}}">{{post.title}}</a></p>
+
+        {% endfor %}
 
     </section>
 </article>
