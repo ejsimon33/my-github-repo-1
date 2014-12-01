@@ -254,8 +254,8 @@ h2 {
    ============ */
 
     .main article {
-        float: left;
-        width: 57%;
+        margin: 0, auto;
+        width: 100%;
     }
 
     .main aside {
