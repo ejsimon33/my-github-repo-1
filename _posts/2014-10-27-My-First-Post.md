@@ -1,6 +1,6 @@
 ---
 layout: generic
-title: Cool Post
+title: ejsimon's first blog
 tag: cool thing
 category: Something
 published: true
