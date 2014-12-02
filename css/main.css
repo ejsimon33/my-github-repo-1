@@ -191,6 +191,7 @@ h2 {
     font-weight: 400; 
     border-bottom: 3px solid black;
     padding-bottom: 20px;
+    padding-top: 75px;
 }
 .teal {
     background-color: #18bc9c;
