@@ -171,6 +171,17 @@ h2 {
 }
 
 
+.portfolio article {
+    height: 320px;
+    width: 320px;
+    float: left;
+    display: inline-block;
+    padding: 0;
+}
+
+
+
+
 .wrapper{
     margin:0px auto;
   
