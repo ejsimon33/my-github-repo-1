@@ -49,30 +49,17 @@ tag: hidden
             </section>
         </section>
  <div id"aboutWrapper" class="teal">
-     <section class=" portfolio teal">
+     <section class="portfolio teal row">
         <h1 class="textCenter">about me</h1>
-        
-        {% for page in site.pages reversed %}
-
-        	{% if page.tag == "show" %}
-
-            	<p><a href="{{site.url}}{{page.url}}">{{page.title}}</a></p>
-
-            {% else if page.tag == "hidden" %}
-
-            	{{page.title}}
-
-            {% endif %}
-
-            {% if page.tag == "big" %}
-
- 				<h1><a href="{{site.url}}{{page.url}}">{{page.title}}</a></h1>
-
-	 		{% endif %}
-
-        {% endfor %}
-
-    </section>
+            <div class="rowWrapper clearfix">
+                <div class="column thirty">
+                        <a href=""><img src="images/imageTwo.jpg" /></a>    
+                </div><close column>
+                <div class="column thirty">
+                        <a href=""><img src="images/imageTwo.jpg" /></a>    
+                </div><close column>
+            </div><close rowRapper>
+        </section><close aboutUS row>
 </div>
 
     <section>
