@@ -184,6 +184,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 400; 
+    border-bottom: 3px solid black;
 }
 
 
