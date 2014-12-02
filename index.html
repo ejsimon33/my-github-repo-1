@@ -6,31 +6,48 @@ tag: hidden
 
 <article>
 
+    <!-- 
     <div id="wrapperContent">
         <div id="wrapper">
         <section id="aboutUs" class="row">
             <div class="rowWrapper clearfix">
                 <div class="column thirty hoverOver">
                         <a href=""><img src="images/imageTwo.jpg" /></a>    
-                </div><!-- close column -->
+                </div> close column 
                 <div class="column thirty">
                         <a href=""><img src="images/imageTwo.jpg" /></a>    
-                </div><!-- close column -->
-            </div><!--close rowRapper-->
-        </section><!--close aboutUS row-->
+                </div><close column>
+            </div><close rowRapper>
+        </section><close aboutUS row>
 
 
         <section id="aboutUs" class="row">
             <div class="rowWrapper clearfix">
                 <div class="column thirty">
                         <a href=""><img src="images/imageTwo.jpg" /></a>    
-                </div><!-- close column -->
+                </div><close column>
                 <div class="column thirty">
                         <a href=""><img src="images/imageTwo.jpg" /></a>    
-                </div><!-- close column -->
-            </div><!--close rowRapper-->
-        </section><!--close aboutUS row-->
-    </div>
+                </div><close column>
+            </div><close rowRapper>
+        </section><close aboutUS row>
+    </div> -->
+
+    <section class="row portfolio">
+            <section class="rowWrapper clearfix">
+                <h1 class="textCenter">my work</h1>
+
+                {% for item in site.data.portfolio %}
+
+                    <article style="background: url('{{site.url}}/img/{{item.title}}.jpg') center; background-size: 100%; background-repeat: no-repeat"></article>
+
+                {% endfor %}
+
+                    <span class="right"><a href="#">all work >></a></span>
+
+
+            </section>
+        </section>
 
     <section>
         <h2>section h2 and this :thumbsup:</h2>
