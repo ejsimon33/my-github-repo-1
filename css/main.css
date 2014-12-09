@@ -205,7 +205,8 @@ h2 {
     text-align: center;
 }
 .thirty {
-  width: 33.33333333%; }
+  width: 33.33333333%; 
+  float: left;
 
 /*.wrapper{
     margin:0px auto;
